@@ -1,7 +1,5 @@
 package com.kishan.java.leetcode.juneChallenges;
 
-import sun.reflect.generics.tree.Tree;
-
 public class TreeNode {
     private int value;
     private TreeNode left;

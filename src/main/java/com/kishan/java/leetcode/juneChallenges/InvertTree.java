@@ -1,7 +1,5 @@
 package com.kishan.java.leetcode.juneChallenges;
 
-import com.kishan.java.leetcode.juneChallenges.TreeNode;
-
 public class InvertTree {
 
     public static TreeNode invertTree(TreeNode treeNode) {
