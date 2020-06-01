@@ -1,4 +1,4 @@
-package com.kishan.leetcode.juneChallenges
+package com.kishan.scala.leetcode.juneChallenges
 
 // Problem Statement:
 
@@ -27,18 +27,10 @@ package com.kishan.leetcode.juneChallenges
 */
 
 
-//Definition for a binary tree node.
-class TreeNode(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null) {
-  var value: Int = _value
-  var left: TreeNode = _left
-  var right: TreeNode = _right
-}
-
-object june1 {
-
+object invertTree {
 
   def invertTree(_tree: TreeNode): TreeNode = {
-    if(_tree == null){
+    if (_tree == null) {
       return _tree
     }
     var tree = swapTree(_tree)
@@ -81,7 +73,7 @@ object june1 {
     var level_1_Left = new TreeNode(2, new TreeNode(1), new TreeNode(3))
     var level_1_Right = new TreeNode(7, new TreeNode(6), new TreeNode(9))
     var root = new TreeNode(4, level_1_Left, level_1_Right)
-    //    var root = new TreeNode(2, new TreeNode(3, new TreeNode(1)))
+    //    var root = new com.kishan.leetcode.juneChallenges.TreeNode(2, new com.kishan.leetcode.juneChallenges.TreeNode(3, new com.kishan.leetcode.juneChallenges.TreeNode(1)))
     var root1 = new TreeNode(2, new TreeNode(1), new TreeNode(3))
     println("Before Inverting")
     printElementInTree(root)
