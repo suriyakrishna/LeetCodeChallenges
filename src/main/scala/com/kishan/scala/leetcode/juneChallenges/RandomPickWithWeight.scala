@@ -54,7 +54,7 @@ class RandomPickWithWeight(_w: Array[Int]) {
   private var preSum: Array[Int] = _w.scan(0)((a, b) => a + b).drop(1)
 
   def pickIndex(): Int = {
-    val randomNumber = random.nextInt(totalSum) + 1
+    val randomNumber = random.nextInt(totalSum) + 1 // We don't want randomNumber as 0 if we get 0. Inorder to avoid that we are adding 1.
     var head = 0
     var tail = preSum.length - 1
     var mid: Int = head + (tail - head) / 2
