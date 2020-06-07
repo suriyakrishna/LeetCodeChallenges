@@ -21,7 +21,6 @@ import scala.util.Random
   [[[1,3]],[],[],[],[],[]]
   Output: [null,0,1,1,1,0]
 */
- */
 
 
 /*
