@@ -60,10 +60,8 @@ object QueueReconstructionByHeight {
     emptyLinkedList.asScala.toArray
   }
 
-
-
   def main(args: Array[String]): Unit = {
     val input: Array[Array[Int]] = Array(Array(7, 0), Array(4, 4), Array(7, 1), Array(5, 0), Array(6, 1), Array(5, 2))
-
+    println(reconstructQueue(input).map(_.toList).toList)
   }
 }
