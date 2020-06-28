@@ -46,7 +46,7 @@ package com.kishan.scala.leetcode.juneChallenges
 object PerfectSquares {
   def main(args: Array[String]): Unit = {
     val result = numSquares(13)
-    println(s"Result: ${result}, ${result == 3}")
+    println(s"Result: ${result}, ${result == 2}")
   }
 
   def numSquares(n: Int): Int = {
