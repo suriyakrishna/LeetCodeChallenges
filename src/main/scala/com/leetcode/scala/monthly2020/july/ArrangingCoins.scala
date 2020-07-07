@@ -45,7 +45,7 @@ object ArrangingCoins {
 
   //Matematical Approach
   def arrangeCoinsMath(n: Int): Int = {
-    return math.sqrt((2 * n.toLong + 0.25) - 0.5).toInt
+    return (math.sqrt(2 * n.toLong + 0.25) - 0.5).toInt
   }
 
   def main(args: Array[String]): Unit = {
