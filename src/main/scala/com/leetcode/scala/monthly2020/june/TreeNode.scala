@@ -22,3 +22,17 @@ class TreeNode(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null)
     "[" + result + "]"
   }
 }
+
+object TreeNode {
+  def heightOfTree(node: TreeNode): Int = {
+    if (node == null) return -1
+    else return heightOfTree(node.left) + 1 max heightOfTree(node.right) + 1
+  }
+
+  def countNodes(node: TreeNode): Int = {
+    if (node == null) return 0
+    else return 1 + countNodes(node.left) + countNodes(node.right)
+  }
+
+  def apply(_value: Int = 0, _left: TreeNode = null, _right: TreeNode = null): TreeNode = new TreeNode(_value, _left, _right)
+}

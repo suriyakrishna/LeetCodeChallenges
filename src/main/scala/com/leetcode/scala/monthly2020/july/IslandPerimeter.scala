@@ -28,17 +28,17 @@ import scala.collection.mutable
 /*
 * Approach: Breadth First Search (BFS)
 * 1. We have defined a case class to store the indexes as pair.
-* 2. getIslandStart will find the edge of the island will give the Pair - from which we have to start the BFS.
-* 3. getValue will return the value of the Pair.
+* 2. getIslandStart will find the edge of the island and return a Pair - from which we need to start our BFS.
+* 3. getValue will return the value of a given Pair.
 * 4. In Our function islandPerimeter:
   * a. First, we will check if the grid is empty. If empty we will return 0.
   * b. If grid non-empty we will use getIslandStart to get the Pair from which we need to start.
   * c. We will build Queue(To store the nodes to be visited) and HashSet(To store the visited nodes).
   * d. We will enqueue the queue with start Pair and we will add the start Pair to the HashSet.
-  * e. We will dequeue the queue and we will check for the conditions if the node is at the edge of the grid we will add (1 * no_of_edges shared with the edge of the grid) to the perimeter based on the fact that how many edges are at the edge of the grid for that particular node.
-  * f. We will check if the node share it's edges with any nodes in top, left, right or bottom. If the node shares it's edge with any of the adjacent node and the value of the adjacent node is 1 and the node is not visited then we will enqueue the adjacent node to the queue and we will add the adjacent node to the HashSet.
-  * g. If the above condition doesn't match then the adjacent node should be 0. So, we will add 1 to the perimeter.
-  * h. Finally, the queue will be empty and we will be return the perimeter value.
+  * e. We will dequeue the queue and we will check for the conditions. If the node is at the edge of the grid we will add (1 * no_of_edges shared with the edge of the grid) to the perimeter based on the fact that how many edges are at the edge of the grid for that particular node.
+  * f. We will check if the node share it's edges with any nodes in top, left, right or bottom. If the node shares it's edge with any of the adjacent node and if the value of the adjacent node is 1 and if the node is not visited then we will enqueue the adjacent node to the queue and we will add the adjacent node to the HashSet.
+  * g. If above conditions doesn't match then the adjacent node should be 0. So, we will add 1 to the perimeter.
+  * h. Finally, the queue will be empty and we will return the perimeter value.
   *
 * */
 
