@@ -85,6 +85,14 @@ object AddBinary {
   }
 
   def main(args: Array[String]): Unit = {
-
+    val (a,b) = ("1", "111111111")
+    val result = addBinary(a, b)
+    val (a1,b1) = ("11", "1")
+    val result1 = addBinary(a1, b1)
+    val (a2,b2) = ("1010", "1011")
+    val result2 = addBinary(a2, b2)
+    println(s"Result: ${result}, ${result == "1000000000"}")
+    println(s"Result: ${result1}, ${result1 == "100"}")
+    println(s"Result: ${result2}, ${result2 == "10101"}")
   }
 }
