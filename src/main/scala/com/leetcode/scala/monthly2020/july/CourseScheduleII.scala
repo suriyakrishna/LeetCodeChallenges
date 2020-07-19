@@ -47,7 +47,17 @@ object CourseScheduleII {
   def main(args: Array[String]): Unit = {
 
     val nums: Array[Array[Int]] = Array(Array(1, 0), Array(2, 0), Array(3, 1), Array(3, 2))
-    findOrder(4, nums)
+    val result = findOrder(4, nums).mkString(" ")
+    val nums1: Array[Array[Int]] = Array()
+    val result1 = findOrder(4, nums1).mkString(" ")
+    val nums2: Array[Array[Int]] = Array(Array(0, 1), Array(1, 0))
+    val result2 = findOrder(4, nums2).mkString(" ")
+    val nums3: Array[Array[Int]] = Array(Array(2, 1))
+    val result3 = findOrder(3, nums3).mkString(" ")
+    println(s"Result: ${result}, ${result == "0 1 2 3"}")
+    println(s"Result: ${result1}, ${result1 == "0 1 2 3"}")
+    println(s"Result: ${result2}, ${result2 == ""}")
+    println(s"Result: ${result3}, ${result3 == "0 1 2"}")
   }
 
   def findOrder(numCourses: Int, prerequisites: Array[Array[Int]]): Array[Int] = {
