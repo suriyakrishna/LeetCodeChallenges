@@ -19,7 +19,7 @@ package com.leetcode.scala.monthly2020.august
 * */
 
 /*
-* Approach: Iterative Force/Regex
+* Approach: Iterative/Regex
 *
 * 1. First We will check if the first letter of string is capital or not.
 * 2. We have to iterate through each character and count the number of lower case and upper case character.
