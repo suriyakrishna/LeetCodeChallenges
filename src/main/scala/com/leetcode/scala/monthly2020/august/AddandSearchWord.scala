@@ -32,7 +32,7 @@ import scala.collection.mutable
 * To check if we have the word in dictionary.
 * 1. First, we will check if the length is available in the dictionary. If not we will return false.
 * 2. If we have the length, we will get all the words for that length and then we have to iterate through each word.
-* 3. For each word, we have to count the number of matching elements, it the number of matching and length of the word is equal we will return true.
+* 3. For each word, we have to count the number of matching elements, if the number of matching and length of the word is equal we will return true.
 * 4. If we don't find any match we will return false.
 *
 * */

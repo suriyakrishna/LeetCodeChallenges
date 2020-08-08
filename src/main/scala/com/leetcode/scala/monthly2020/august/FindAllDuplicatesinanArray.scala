@@ -18,7 +18,7 @@ import scala.collection.mutable
 * */
 
 /*
-* Approach: Bit Manipulation
+* Approach: Iterative
 *
 * Constraint is to solve without additional space and linear time complexity.
 *
